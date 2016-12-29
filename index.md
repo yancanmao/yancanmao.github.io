@@ -4,7 +4,7 @@
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+使用markdown编写的页面到底有什么好的地方呢
 
 ```markdown
 Syntax highlighted code block
@@ -26,10 +26,9 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### 于2016.12.29解锁网页
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yancanmao/yancanmao.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+回头再看看教程吧，现在就玩玩这个页面，看起来也没有太大的作用，就是一个页面而已，没有任何作用
 
-### Support or Contact
-
+### 希望能够继续编辑这个属于自己的网页
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
