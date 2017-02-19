@@ -1,0 +1,6 @@
+permalink: /:title
+
+title: maoyancan.cn
+url: http://www.maoyancan.cn
+feed: /atom.xml
+author_info: <a href="http://www.maoyancan.cn/">maoyancan</a>
