@@ -1,83 +1,126 @@
-# chan theme configuration
+# Site settings
+title: Hux Blog
+SEOTitle: 黄玄的博客 | Hux Blog
+header-img: img/home-bg.jpg
+email: huxpro@gmail.com
+description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
+keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, 前端, 设计, 产品, 肖玉, Lynn, 肖玉的男朋友"
+url: "https://huangxuan.me"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# site setting
-rss: /atom.xml
-favicon: /favicon.png
 
-# style setting
-monochrome: true
 
-# view setting
-avatar: https://cn.gravatar.com/avatar/35fef74d731255cd569c2c2b0b9e87e4?s=200
-avatarLink: /about
-maxContentWidth: 1000px # set the main content column's max-width property. keep it blank to unlimited the width
-copyright: # the copyright text in the footer, could be richtext
+# SNS settings
+RSS: false
+weibo_username:     huxpro
+zhihu_username:     huxpro
+github_username:    huxpro
+#twitter_username:  huxpro
+facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
 
-# sidebar navigator structure
-# It's a list with item that is also list.
-# The item of first level list means a group of links,
-# and the item of the second level list means exactly a link.
-# A link item is an object whit two properties: 'name' for displaying and 'link' for redirecting.
-# A link starts with http/https would be rendered as a tag with 'target="_blank"' .
-# There are also some special link items representing in string: 'categories', 'tags' and 'archives'
-nav:
-  -
-    - categories # display a collapsible category list
-    - tags       # display a collapsible tag list
-    - archives   # display a collapsible archive list
-  -
-    -
-      name: Homepage
-      url: '/'
-    -
-      name: By Year
-      url: /archives
-  -
-    -
-      name: Chan
-      url: https://github.com/denjones/hexo-theme-chan
-    -
-      name: Github
-      url: https://github.com/denjones
-    -
-      name: RSS
-      url: /atom.xml
 
-# duoshuo shortname
-# refer to http://duoshuo.com
-# If you use disqus then you should set disqus_shortname in your site config and disable duoshuo here.
-# You also need to set 'comments' to true in the front-matter
-#duoshuo: sprabbit
 
-# jiathis share id
-# refer to http://jiathis.com
-#jiathis: 1589291
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# open graph
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
 
-# analytics ids
-google_analytics:
-baidu_statistics:
 
-# default creative commons
-# There are 6 kinds of combination and place 'none' to disable.
-# - by
-# - by-sa
-# - by-nd
-# - by-nc
-# - by-nc-sa
-# - by-nc-nd
-# - none
-# This setting could be overwritten in the front matter of a post.
-# More details in https://creativecommons.org
-cc: by-sa
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
 
-# FancyBox / PhotoSwipe
-# Although it is called fancybox, we use PhotoSwipe instead.
-# Check http://photoswipe.com
-fancybox: true    # enable fancybox/photoswipe rendering
-# photoswipe: true  # the same
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: huxblog
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Su",
+        href: "http://su.gallery/"
+    },{
+        title: "乱序",
+        href: "http://mida.re/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
+    },{
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "前端神盾局",
+        href: "http://wepiaofei.github.io/blog/"
+    }
+]
