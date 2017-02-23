@@ -12,9 +12,9 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-weibo_username:     maoyancan
-zhihu_username:     maoyancan
-github_username:    maoyancan
+weibo_username:     u/5402568051
+zhihu_username:     da-da-dong-gua-38
+github_username:    yancanmao
 #twitter_username:  huxpro
 facebook_username:  maoyancan
 # linkedin_username:  firstname-lastname-idxxxx
@@ -51,7 +51,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: mycblog
+duoshuo_username: 毛言粲
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -63,7 +63,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-92546511-1'            # Format: UA-xxxxxx-xx
 ga_domain: www.maoyancan.cn
 
 
