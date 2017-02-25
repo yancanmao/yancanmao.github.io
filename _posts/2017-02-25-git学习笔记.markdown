@@ -1,0 +1,147 @@
+---
+layout:     post
+title:      "git命令学习笔记"
+subtitle:   " \"学习github使用，寒假在家学习的\""
+date:       2017-02-24 12:00:00
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 技术
+---
+
+
+## github操作命令集合
+
+### 配置Git
+
+本地创建ssh key：
+
+	$ ssh-keygen -t rsa -C "maoyancan@qq.com"
+
+之后会要求确认路径和输入密码,默认的一路回车就行。
+
+到github的settings add ssh key就是生成的key。
+
+### 验证git配置
+
+	$ ssh -T git@github.com
+
+You've successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。 
+
+### 配置本地的仓库（我觉得是这个）
+
+	$ git config --global user.name "yancanmao"
+	$ git config --global user.email "maoyancan@qq.com"
+
+### 添加远程地址
+
+	$ git remote add origin "repository的名字"
+
+### 克隆仓库
+
+	git clone /path/to/repository
+
+### 提出更改到index
+
+	git add <filename>(缺省表示更改所有文件)
+	
+### 提交更改到head
+
+	git commit -m "代码提交信息"
+
+### 推送改动
+
+	git push origin master
+
+master可以是任何一个远程分支。
+
+**没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器**
+	
+	git remote add origin <server>
+
+能够将改动添加到所添加的服务器上。
+
+## 分支
+
+### 创建分支
+
+	git checkout -b feature_x
+
+### 切换到主分支
+
+	git checkout master
+
+### 再把新建的分支删掉
+	
+	git branch -d feature_x
+
+### 将分支推送到远端仓库
+
+	git push origin <branch>
+
+除非将分支推送到远端仓库，不然该分支就是 不为他人所见的
+
+## 更新与合并
+
+### 更新本地最新改动
+	
+	git pull
+
+### 合并其他分支到当前分支
+
+	git merge <branch>
+
+git 会尝试去自动合并改动。遗憾的是，这可能并非每次都成功，并可能出现冲突（conflicts）。 这时候就需要你修改这些文件来手动合并这些冲突（conflicts）。改完之后，你需要执行如下命令以将它们标记为合并成功：
+
+	git add <filename>
+
+在合并改动之前，可以使用如下命令预览差异：
+
+	git diff <source_branch> <target_branch>
+
+### 标签
+
+创建一个叫1.0.0的标签
+	
+	git tag 1.0.0 1b2e1d63ff
+
+1b2e1d63ff 是你想要标记的提交 ID的前 10 位字符。
+
+获取提交ID
+	
+	git log
+
+### 替换本地改动
+
+假如操作失误，可以替换掉本地改动
+	
+	git checkout -- <filename>
+
+此命令会使用 HEAD 中的最新内容替换掉你的工作目录中的文件。
+已添加到暂存区的改动以及新文件都不会受到影响。 
+
+假如你想丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它：
+	
+	git fetch origin
+	git reset --hard origin/master
+
+## 实用的一些使用方法
+
+内建的图形化 git
+	
+	gitk
+
+彩色的 git 输出
+	
+	git config color.ui true
+
+每个提交的信息只显示一行
+
+	git config format.pretty oneline
+
+交互式添加文件到暂存区
+	
+	git add -i
+
