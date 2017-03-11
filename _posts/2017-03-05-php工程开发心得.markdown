@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "php工程开发心得"
-subtitle:   " 今年来百度后的开发总结\""
+subtitle:   " \"今年来百度后的开发总结\""
 date:       2017-03-05 12:00:00
 author:     "MYC"
 header-img: "img/post-bg-universe.jpg"

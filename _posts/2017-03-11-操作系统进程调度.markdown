@@ -1,0 +1,221 @@
+---
+layout:     post
+title:      "操作系统进程调度"
+subtitle:   " \"实时操作系统的进程调度\""
+date:       2017-03-11 12:00:00
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 操作系统
+    - 算法
+---
+
+> “工作期间进行的操作系统调度方式粗浅学习”
+
+## 操作系统进程调度
+
+### 实时操作系统
+
+实时操作系统（RTOS）是指当外界事件或数据产生时，能够接受并以足够快的速度予以处理，其处理的结果又能在**规定的时间之内**来控制生产过程或对处理系统作出快速响应。
+
+特性：响应时间的确定性，任务必须在规定时间内完成
+
+实时操作系统所遵循的最重要的设计原则是：采用各种算法和策略，始终保证系统行为的可预测性(predictability)。
+
+实时操作系统有硬实时和软实时之分。
+
+硬实时要求 在规定的时间内必须完成操作，这是在操作系统设计时保证的。
+
+软实时则只要按照任务的优先级，尽可能快地完成操作即可。
+
+硬实时：VxWorks。
+
+软实时：软实时Linux。
+
+相关rtos还有：nuclear、freertos、ucos。
+
+### 分时操作系统
+
+使一台计算机同时为几个、几十个甚至几百个用户服务的一种操作系统。
+
+示例：Linux、windows
+
+分时系统是为了满足用户需求所形成的一种新型 OS。
+
+特性：分时操作系统注重平均表现性能，不注重个体表现性能。
+
+使用的技术：虚存技术、Cache技术以及CPU的动态分支预测技术。
+
+### 任务调度
+
+实时操作系统和分时操作系统的区别是时限，实时操作系统的运行性能大部分取决于任务调度，所以说我们讲一下任务调度的模块。
+
+任务调度分为两种：
+
+非抢占方式：任务执行后不会中断，应用场景不是太多，难以满足紧急任务要求
+
+抢占方式：可以中断当前任务，使另一个任务执行，但是调度动作的开销较大（某种意义来说，回调函数就是一个中断）
+
+### 任务调度算法
+
+先来先服务调度算法FCFS(非抢占式)
+
+短作业(进程)优先调度算法SJF(非抢占式)
+
+优先权算法(抢占式和非抢占式)
+
+**时间片轮转法(抢占式)**
+
+多级反馈队列调度算法(抢占式)
+
+实时调度算法：
+
+最早截止时间EDF算法
+
+**最低松弛度优先算法**
+
+轮转法(RR)（可抢占）=> 维护一个队列，每次从队列中取出一个任务，然后执行，如果到达时间片还没有结束任务，就中断任务，加到队列的尾部，等待下一次的调用。这种设计常用于分时操作系统。并且一般来说，时间片的大小要大于上下文切换的时间，不然任务执行时间很大一部分都浪费在上下文切换上。
+
+最早截止时间：根据任务截止时间确定任务的优先级，截止时间越早优先级越高。
+
+最低松弛度优先算法：根据任务的紧急程度确定任务优先级，越临近deadline优先级越高。
+
+### 优先级位图法
+
+![](http://i.imgur.com/uNryplE.png)
+
+OSRdyGrp：优先级就绪组
+
+这是一个8位的变量。每一个变量对应于OSRdyTbl[]中的一行（实际上是一个元素，但也可以理解为一行）。
+
+OSRdyTbl[]：优先级就绪表
+
+这是一个数组，有8个成员，每个成员都是8位的变量，所以就可以构成了8*8的矩阵了。所以64个优先级都是标定在这个数组中的。
+
+图中有64个空格，表示64个优先级，有就绪任务就将对应的位置1,osrdygrp对应于第几行，这一行有1就在第几位置1
+
+优先级位图法是一个很强大的算法，他牺牲空间换取时间，将任务调度的时间大幅度缩短，主要思想就是将所有需要的数据存入位图中，然后根据位图进行数据查询，后面寻找最高优先级任务也跟这个有关。
+
+![](http://i.imgur.com/EnFzmcW.png)
+
+优先级判定表OSUnMapTbl[]，这个表的作用是为了节省时间，这样查表的话，耗的时间是可以确定的，很好的满足了实时性。
+
+这个数组中的数字是怎么来的？
+
+就是OSRdyTbl[]的二进制从右往左数第一次出现为1的位
+
+例：0101 0011，从右往左看，第一个出现1的位 就是0位所以为0。
+
+### Ucos任务调度过程-OSTimeDly
+
+OSTimeDly的调用方法有两种，一种主动调用，一种被动调用。
+
+主动调用OSTimeDly()：OSTimeDly()的作用就是将此时正在运行的函数挂起，调用OS_Sched()进行任务切换。
+
+被动调用OSTimeDly()：时间片结束被动调用OSTimeDly()，切换是通过TCB的参数OSTCBDly进行的，每次systick都会让OSTCBDly值-1，当OSTCBDly为0时，调用OSTimeDly()， systick是通过OSTickISR()调用的。
+
+主动调用示例：
+
+	void Taskn(void pdata) {
+		pdata = pdata;
+		
+		while(1) {
+			OSTimeDly(OS_TICKS_PER_SEC);
+		}
+	}
+
+这个代码里面调用了OSTimeDly（）；
+
+这里是OSTimeDly源码：
+
+	void  OSTimeDly (INT32U ticks)
+	{
+	    INT8U      y;
+	#if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+	    OS_CPU_SR  cpu_sr = 0u;
+	#endif
+	
+	
+	
+	    if (OSIntNesting > 0u) {                     /* See if trying to call from an ISR                  */
+	        return;
+	    }
+	    if (OSLockNesting > 0u) {                    /* See if called with scheduler locked                */
+	        return;
+	    }
+	    if (ticks > 0u) {                            /* 0 means no delay!                                  */
+	        OS_ENTER_CRITICAL();
+	        y            =  OSTCBCur->OSTCBY;        /* Delay current task                                 */
+	        OSRdyTbl[y] &= (OS_PRIO)~OSTCBCur->OSTCBBitX;
+	        if (OSRdyTbl[y] == 0u) {
+	            OSRdyGrp &= (OS_PRIO)~OSTCBCur->OSTCBBitY;
+	        }
+	        OSTCBCur->OSTCBDly = ticks;              /* Load ticks in TCB                                  */
+	        OS_EXIT_CRITICAL();
+	        OS_Sched();                              /* Find next task to run!                             */
+	    }
+	}
+
+可以看到里面进行了
+
+	y =  OSTCBCur->OSTCBY;        /* Delay current task                                 */
+	OSRdyTbl[y] &= (OS_PRIO)~OSTCBCur->OSTCBBitX;
+
+这一步是将当前任务挂起的操作。
+
+	 OSTCBCur->OSTCBDly = ticks;     
+
+这一步是进行了TCB Tick计数的还原。
+
+	OS_Sched();
+
+进行任务调度。
+
+接下来我们将任务调度
+
+### Ucos任务调度过程-OS_Sched
+
+	void  OS_Sched (void)
+	{
+	#if OS_CRITICAL_METHOD == 3u                           /* Allocate storage for CPU status register     */
+	    OS_CPU_SR  cpu_sr = 0u;
+	#endif
+	
+	    OS_ENTER_CRITICAL();
+	    if (OSIntNesting == 0u) {                          /* Schedule only if all ISRs done and ...       */
+	        if (OSLockNesting == 0u) {                     /* ... scheduler is not locked                  */
+	            OS_SchedNew();
+	            OSTCBHighRdy = OSTCBPrioTbl[OSPrioHighRdy];
+	            if (OSPrioHighRdy != OSPrioCur) {          /* No Ctx Sw if current task is highest rdy     */
+	#if OS_TASK_PROFILE_EN > 0u
+	                OSTCBHighRdy->OSTCBCtxSwCtr++;         /* Inc. # of context switches to this task      */
+	#endif
+	                OSCtxSwCtr++;                          /* Increment context switch counter             */
+	                OS_TASK_SW();                          /* Perform a context switch                     */
+	            }
+	        }
+	    }
+	    OS_EXIT_CRITICAL();
+	}
+
+
+这里面最重要的一步就是上下文切换OS_TASK_SW();
+
+其意义就是进行cpu的资源释放和就绪任务的放入。
+
+这个实现是通过汇编写出来的，对于不同的硬件环境有不同的实现方式。
+
+这里有一个实现的流程示意图：
+
+![](http://i.imgur.com/b0GGCZu.png)
+
+大概就是通过将当前执行任务的TCB换出CPU，然后将最高优先级的就绪任务换入CPU。
+
+
+
+
+
+
+
