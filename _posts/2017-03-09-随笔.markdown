@@ -1,0 +1,51 @@
+---
+layout:     post
+title:      "随笔"
+subtitle:   " \"笔记记录大全\""
+date:       2017-02-24 12:00:00
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 随笔
+---
+
+## 随笔
+
+### ssh（安全外壳协议）
+ 
+SSH 为 Secure Shell 的缩写，SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。
+
+### scp
+
+scp 可以在 2个 linux 主机间复制文件；
+ 
+	scp [可选参数] file_source file_target 
+
+'file_resource'中有远程主机名还要加冒号加文件路径例
+
+	scp ip_address:source_name localtarget
+
+不同的Linux之间copy文件常用有3种方法：
+
+第一种就是ftp，也就是其中一台Linux安装ftp Server，这样可以另外一台使用ftp的client程序来进行文件的copy。
+
+第二种方法就是采用samba服务，类似Windows文件copy 的方式来操作，比较简洁方便。
+
+第三种就是利用scp命令来进行文件复制。
+
+### php打log
+
+	error_log(var_export($data, true), 3, '/home/users/liubaoju/var/logs/error_log');
+
+### git差异打文档
+
+	diff -r lawyer ldp/apps/lawyer > 1//把差异打成文档
+
+### linux命令
+
+查找文件或文件夹是否有相关字段
+
+	find . | xargs grep save_delivery --color
+
