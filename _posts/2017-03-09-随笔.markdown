@@ -49,3 +49,6 @@ scp 可以在 2个 linux 主机间复制文件；
 
 	find . | xargs grep save_delivery --color
 
+### yii框架
+
+yii使用CArrayDataProvider进行数组分页，可以对一个数组里面的数据进行分页
