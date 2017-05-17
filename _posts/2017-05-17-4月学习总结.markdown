@@ -1,0 +1,154 @@
+---
+layout:     post
+title:      "4月学习总结"
+subtitle:   " \"前后端经验\""
+date:       2017-05-17 12:00:00
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - php
+    - web
+    - phpUnit
+---
+
+
+### 前言
+
+继上个月学习的一些东西，在做项目的过程中新添了很多收获，目前来总结一下，上个月一些不懂的东西这个月也开始渐渐有感觉了，现在对log的感觉也越来越好，线上排查问题一般就靠。
+
+### CArrayDataProvider()
+
+<code>dataprovider</code>，上个月没有明白这个东西的作用，现在大概明白了，这个东西可以将数组规范化后封装成一个对象，这个对象在特定的工具中可以进行调用，比如说可以使用<code>gridview</code>这个工具来进行调用，可以生成一个表，具体调用例子
+
+	<?php
+	$this->widget('TbGridView', array(
+	    'dataProvider' => $dataprovider,
+	    'columns' => array(
+	        array(
+	            'header' => '订单号',
+	            'name' => 'order_id',
+	        ),
+	        array(
+	            'header' => '产品名称',
+	            'name' => 'goods_name',
+	        ),
+	        array(
+	            'header' => '订单创建时间',
+	            'name' =>'create_time',
+	        ),
+	        array(
+	            'header' => '完成时间',
+	            'name' => 'finish_time',
+	        ),
+	    )
+	));
+	?>
+
+### php打log
+	error_log(var_export($param, true), 3, '/home/users/maoyancan/error_log');
+	file_put_contents('/tmp/users', var_export($merchant, true)."\n", FILE_APPEND);
+
+### 接口报异常后可以将log输出到lumen的一个log文件中
+	use Log;
+	Log::info('FinanceController', ['error' => $validator->errors()->all()]);
+
+### 把差异打成文档
+	diff -r file_name file_name > 1
+
+### 全局找某个字符
+	find . | xargs grep error_log --color
+
+### composer
+	composer update file_name
+	vim ~/.bash_profile
+	source ~/.bash_profile
+	vim ~/.bashrc 
+	../../bin/composer
+	../../bin/composer require file_name
+
+### phpUnit
+
+<code>phpUnit</code>是一个单测的包，而lumen框架下就可以调用这个包进行单元测试，单元测试就是对每个接口进行case覆盖的测试，尽量减少对外部环境的依赖进行的测试，具体用法：
+以lumen框架为例，lumen框架自己就集成了phpunit的环境，所以可以在这里面直接进行开发，不用布置环境，lumen框架结构中有一个tests的文件夹，我们编写的单测文件就放在这里面。
+![](http://i.imgur.com/z26lssJ.png)
+
+单测的具体方法是
+
+	<?php //示例1
+	
+	 use Illuminate\Foundation\Testing\DatabaseTransactions;
+	 use App\Http\Example;
+	
+	 class ExampleTest extends TestCase  //类名以Test结尾
+	 {
+	     use DatabaseTransactions;   //使用数据事务在每次测试后回滚数据库（在每个测试结束时，清除测试中插入数据表中的数据）
+	
+	     protected $testExample;
+	
+	     public function setUp()     //每个测试执行前执行
+	     {
+	        parent::setUp();         //如果要自己设置setUp()，此项必须
+	
+	        if (!$this->testExample) {
+	            $this->testExample = new Example();
+	        }
+	
+	        factory('APP/User')->create();      //若在此处插入数据，则当前测试类中的每个测试执行前都将插入数据，并在结束时删除
+	     }
+	
+	     public function ExampleProvider()      //产生若干条测试用例输入及期望输出
+	     {
+	          $inputParam = ['name' => 'Tom', 'name' => ' ', ...];
+	          $expectOut = ['Tom', false, ...];
+	
+	          for($i = 0, $i < count($inputParam), $i++)
+	          {
+	               data = [$inputParam[$i], $expectOut[$i]];
+	          }
+	          return data;
+	     }
+	
+	     /**
+	      * @dataProvider ExampleProvider         //这里指明了运行下面测试方法的数据提供源为ExampleProvider的输出
+	      */
+	     public function testMethod($inputParam, $expectOut)    //测试方法名必须以test开头，通常test后面跟要测试的方法名称（非必须）。
+	     {
+	         factory('APP/User')->create();
+	                    .
+	                    .                        //向数据库插入若干铺垫数据
+	                    .
+	
+	         $this->assertEquals($expectOut, $this->testExample->method($inputParam));       //断言输出
+	     }
+	
+	     ...                       //其他测试方法
+	 }
+
+### phpUnit mock API
+
+单元测试过程中经常会遇到被测试函数A依赖另一个函数B，但是B已经完全测试过，没有必要在测试A的时候重复测试B。如何去除这种不必要的测试呢？结合PHPUnit的Mock API，提出更加优雅，高效的解决方案。
+[参考博客](http://www.cnblogs.com/bourneli/archive/2012/06/29/2570440.html)
+[官方文档](https://phpunit.de/manual/current/zh_cn/test-doubles.html#test-doubles.mock-objects)
+
+	getMock() //自动创建一个集成OrderDao的mock对象
+
+	//期望不要调用这个对象的insert方法，如果调用，就会报错
+	$obj->expects($this->never())->method('insert');
+
+	//期望调用这个对象的insert方法一次
+	$obj->expects($this->once())->method('insert');
+
+	//期望调用这个对象insert方法，次数任意。在调用时，输入必须是$aOrder对象，
+    //返回必须是0。如果不满足这种期望，将会报错。
+	$obj->expects($this->any())
+	    ->method('insert')
+	    ->with($aOrder)
+	    ->will($this->returnValue(0));
+
+使用mock可以减少接口对其他接口的依赖性，关注于每个最小单元的测试，这是我理解的单元测试，这样更能看出一个单元的运行是否正常。
+
+### 总结
+
+细算一下，最近学的东西全部都与前后端，php、js之类的挂钩，接触的东西大多都是框架和语言，并没有更多实质上的先进技术的学习，不过在debug上面感觉自己是有了长足的进步，懂的如何进行log调试，进行线上问题排查，懂的如何阅读文档，以及如何与其他部门的业务人员沟通联调，现在大多数底层有点意思的东西都被实现过了，在他们之上编程只需要懂的规则，这点其实感觉没有那么的有意思，所以说，下来还是要自己学很多东西的，就凭现在掌握的东西，还是很少，至少要掌握很多思想才行。
