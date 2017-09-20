@@ -142,6 +142,6 @@ git 会尝试去自动合并改动。遗憾的是，这可能并非每次都成�
 	git config format.pretty oneline
 
 交互式添加文件到暂存区
-	
+
 	git add -i
 
