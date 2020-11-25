@@ -1,93 +1,24 @@
-# Site settings
-title: MYC Blog
-SEOTitle: 毛言粲的博客 | MYC Blog
-header-img: img/home-bg.jpg
-email: maoyancan@qq.com
-description: "搬砖小能手，业余造轮子，嵌入式学徒最后跑去学别人造轮子，美哉美哉"
-keyword: "毛言粲, MYC, maoyancan, MAOYANCAN, myc, 博客, 个人网站, 互联网, 星儿"
-url: "https://www.maoyancan.cn"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+title: Researcher
+url: "https://ankitsultana.com"
+baseurl: "/researcher"
 
-
-
-# SNS settings
-RSS: false
-weibo_username:     u/5402568051
-zhihu_username:     da-da-dong-gua-38
-github_username:    yancanmao
-#twitter_username:  huxpro
-facebook_username:  maoyancan
-# linkedin_username:  firstname-lastname-idxxxx
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
+#ins_logo: "./bits-logo.png"
 
+tracking_id: #
 
+footer: yes
+footer_url: "https://github.com/ankitsultana"
+footer_text: "Page design by Ankit Sultana"
 
-# Disqus settings
-disqus_username: myc-blog
+sass:
+    style: compressed
+    sass_dir: _sass
 
-# Duoshuo settings
-# duoshuo_username: MYC
-# Share component is depend on Comment so we can NOT use share only.
-# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
-
-
-# Analytics settings
-# Baidu Analytics 
-# ba_track_id: [your track id]
-
-# Google Analytics
-ga_track_id: 'UA-92546511-1'            # Format: UA-xxxxxx-xx
-ga_domain: www.maoyancan.cn
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "取乎其上，得乎其中，<br>取乎其中，得乎其下"
-sidebar-avatar: /img/avatar-myc.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
-# Friends
-friends: [
-    
-]
+nav:
+ - name: "About"
+   link: "/researcher/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
