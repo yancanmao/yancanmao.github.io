@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MYC Blog</title>
+    <description>一个迷茫的寻找未来的半吊子程序员，现在百度实习，没啥事干，写个blog，模板借用大牛的，现在处于0.2版，等我熟悉了之后会出自己的版本的</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 05 Mar 2017 20:17:49 +0800</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2017 20:17:49 +0800</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>php工程开发心得</title>
+        <description>&lt;h2 id=&quot;心得总结&quot;&gt;心得总结&lt;/h2&gt;
+
+&lt;h3 id=&quot;框架&quot;&gt;框架&lt;/h3&gt;
+
+&lt;p&gt;来到百度过后主要的工作还是web开发，本来以为我会做一点数据分析方面的项目开发，但是到目前感觉还是更偏向于php web开发，目前所进行的主要工作都使用到了php的框架，多是mvc架构的框架，如：yii、laravel、lumen，这些框架使一个工程的开发变得简单。&lt;/p&gt;
+
+&lt;p&gt;不得不承认php在web开发方面的能力确实非常的强大，而且提供了一个前后端集成的全栈式环境，使后端与前端的交互变得简单，不过框架需要配置，在整个项目开发过程中，令我最难受的就是php的配置，泽中难受说到底还是因为没有足够的框架基础，没有阅读源码或者不了解具体的调度基础。&lt;/p&gt;
+
+&lt;p&gt;后面我会陆陆续续的贴出一些框架的学习心得和自己的理解。&lt;/p&gt;
+
+&lt;h3 id=&quot;js&quot;&gt;js&lt;/h3&gt;
+
+&lt;p&gt;在最近的项目中，我又进行了js的相关开发，使用了ajax进行get请求的处理，虽然现在对js还是一知半解，不过还是有了很多的理解，整个从后端到前端的开发流程我都走了一遍，感觉还是最mvc框架，和web开发有了更深的理解后面也会趁着业余时间做一些相关学习，阅读相关书籍，到目前为止虽然感觉自己还是像搬砖一样的学习知识，但是感觉自己连砖都搬不动，还是很多基础知识不到位，到现在很多东西停在了理论上，需要多阅读代码，也需要多进行行业各方面的接触，多写程序，上传到github上，进行版本保留，多阅读别人的代码，这才是比较好的节奏。&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 05 Mar 2017 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/03/05/php%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/03/05/php%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/</guid>
+        
+        <category>学习</category>
+        
+        <category>心得</category>
+        
+        <category>php</category>
+        
+        <category>js</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>php学习笔记-1</title>
+        <description>&lt;h2 id=&quot;17-1-13&quot;&gt;17-1-13&lt;/h2&gt;
+
+&lt;h3 id=&quot;作用域&quot;&gt;作用域&lt;/h3&gt;
+
+&lt;p&gt;PHP 有三种不同的变量作用域：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;local（局部）&lt;/li&gt;
+  &lt;li&gt;global（全局）&lt;/li&gt;
+  &lt;li&gt;static（静态）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;函数之外声明的变量拥有 Global 作用域，只能在函数以外进行访问。&lt;/p&gt;
+
+&lt;p&gt;函数内部声明的变量拥有 LOCAL 作用域，只能在函数内部进行访问。&lt;/p&gt;
+
+&lt;h3 id=&quot;php-global-关键词&quot;&gt;PHP global 关键词&lt;/h3&gt;
+&lt;p&gt;global 关键词用于访问函数内的全局变量。&lt;/p&gt;
+
+&lt;h3 id=&quot;php-strpos-函数&quot;&gt;PHP strpos() 函数&lt;/h3&gt;
+
+&lt;p&gt;strpos() 函数用于检索字符串内指定的字符或文本。&lt;/p&gt;
+
+&lt;p&gt;如果找到匹配，则会返回首个匹配的字符位置。如果未找到匹配，则将返回 FALSE。&lt;/p&gt;
+
+&lt;h3 id=&quot;php-常量&quot;&gt;PHP 常量&lt;/h3&gt;
+
+&lt;p&gt;常量是单个值的标识符（名称）。在脚本中无法改变该值。&lt;/p&gt;
+
+&lt;p&gt;有效的常量名以字符或下划线开头（常量名称前面没有 $ 符号）。&lt;/p&gt;
+
+&lt;h3 id=&quot;设置-php-常量&quot;&gt;设置 PHP 常量&lt;/h3&gt;
+
+&lt;p&gt;如需设置常量，请使用 define() 函数 - 它使用三个参数：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;首个参数定义常量的名称
+第二个参数定义常量的值
+可选的第三个参数规定常量名是否对大小写敏感。默认是false表示敏感，true表示不敏感。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;php-用户定义函数&quot;&gt;PHP 用户定义函数&lt;/h3&gt;
+
+&lt;p&gt;除了内建的 PHP 函数，我们可以创建我们自己的函数。&lt;/p&gt;
+
+&lt;p&gt;函数是可以在程序中重复使用的语句块。&lt;/p&gt;
+
+&lt;p&gt;页面加载时函数不会立即执行。&lt;/p&gt;
+
+&lt;p&gt;函数只有在被调用时才会执行&lt;/p&gt;
+
+&lt;p&gt;函数名对大小写不敏感&lt;/p&gt;
+
+&lt;h3 id=&quot;在-php-中创建数组&quot;&gt;在 PHP 中创建数组&lt;/h3&gt;
+
+&lt;p&gt;在 PHP 中， array() 函数用于创建数组：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;array();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在 PHP 中，有三种数组类型：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;索引数组 - 带有数字索引的数组&lt;/li&gt;
+  &lt;li&gt;关联数组 - 带有指定键的数组&lt;/li&gt;
+  &lt;li&gt;多维数组 - 包含一个或多个数组的数组&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;php-关联数组&quot;&gt;PHP 关联数组&lt;/h5&gt;
+
+&lt;p&gt;关联数组是使用您分配给数组的指定键的数组，相当于Python中的字典。&lt;/p&gt;
+
+&lt;h5 id=&quot;遍历关联数组&quot;&gt;遍历关联数组&lt;/h5&gt;
+
+&lt;p&gt;如需遍历并输出关联数组的所有值，您可以使用 foreach 循环，就像这样：
+	&amp;lt;?php
+	$age=array(“Bill”=&amp;gt;”35”,”Steve”=&amp;gt;”37”,”Peter”=&amp;gt;”43”);&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;foreach($age as $x=&amp;gt;$x_value) {
+  	echo &quot;Key=&quot; . $x . &quot;, Value=&quot; . $x_value;
+  	echo &quot;&amp;lt;br&amp;gt;&quot;;
+}
+?&amp;gt; ### PHP - 数组的排序函数
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在本节中，我们将学习如下 PHP 数组排序函数：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sort() - 以升序对数组排序&lt;/li&gt;
+  &lt;li&gt;rsort() - 以降序对数组排序&lt;/li&gt;
+  &lt;li&gt;asort() - 根据值，以升序对关联数组进行排序&lt;/li&gt;
+  &lt;li&gt;ksort() - 根据键，以升序对关联数组进行排序&lt;/li&gt;
+  &lt;li&gt;arsort() - 根据值，以降序对关联数组进行排序&lt;/li&gt;
+  &lt;li&gt;krsort() - 根据键，以降序对关联数组进行排序&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;超全局变量-在-php-410-中引入是在全部作用域中始终可用的内置变量&quot;&gt;超全局变量 在 PHP 4.1.0 中引入，是在全部作用域中始终可用的内置变量。&lt;/h3&gt;
+
+&lt;h3 id=&quot;php-全局变量---超全局变量&quot;&gt;PHP 全局变量 - 超全局变量&lt;/h3&gt;
+
+&lt;p&gt;PHP 中的许多预定义变量都是“超全局的”，它们在一个脚本的全部作用域中都可用。无需执行 global $variable; 就可以访问它们。&lt;/p&gt;
+
+&lt;p&gt;这些超全局变量是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;$GLOBALS&lt;/li&gt;
+  &lt;li&gt;$_SERVER&lt;/li&gt;
+  &lt;li&gt;$_REQUEST&lt;/li&gt;
+  &lt;li&gt;$_POST&lt;/li&gt;
+  &lt;li&gt;$_GET&lt;/li&gt;
+  &lt;li&gt;$_FILES&lt;/li&gt;
+  &lt;li&gt;$_ENV&lt;/li&gt;
+  &lt;li&gt;$_COOKIE&lt;/li&gt;
+  &lt;li&gt;$_SESSION&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;今天就学习到这里，剩下的超全局变量我们明天再学（感觉这是一个非常重点的单元）&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;收获：明白了php的基本语法，大概和已经学过的C语言相似，但是用法和Python相似&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 24 Feb 2017 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/02/24/php%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/24/php%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        
+        <category>学习</category>
+        
+        <category>技术</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hello 2017</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“Yeah It’s on. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;使用github搭建一个博客&quot;&gt;使用github搭建一个博客&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;github pages&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;GitHub Pages 本用于介绍托管在 GitHub 的项目， 不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。&lt;/p&gt;
+
+&lt;p&gt;github pages自身对jekyll的兼容性很好，所以可以直接在上面放jekyll的网站，看样子我已经搭好了github pages的博客了，但是现在有一个问题，我想用腾讯云搭建一个博客。&lt;/p&gt;
+
+&lt;h2 id=&quot;腾讯云搭建一个博客&quot;&gt;腾讯云搭建一个博客&lt;/h2&gt;
+
+&lt;p&gt;腾讯云搭建的博客将会在搭建完成后在这篇文章中贴上地址。&lt;/p&gt;
+
+&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;#build&quot;&gt;跳过废话，直接看技术实现 &lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;MYC 的 Blog 就这么开通了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;回想人生20年，我从来没有想象过像现在这样在互联网领域里留下自己的一个印记，但是在今天，我的’博客’真真意义上的开通了，虽然只是用一个前辈的模板进行厚颜无耻的抄袭。&lt;/p&gt;
+
+&lt;p&gt;转眼之间，已经到了成家立业的年龄，还是很怀念过去的时光，那段不会有生活压力，在父母的看护下成长的日子真的很令人怀念，说到底最近的工作还是给我带来了很多的感悟，就像有些人说过，一个人的成长需要不断与他人进行思维交互，特别是陌生人，这样会增长人生经验，丰富自己。&lt;/p&gt;
+
+&lt;p&gt;到底还是成了现在这个样子，纠结未来，想来想去还是感觉生活中缺了一点生么，所以就试着写了一个blog，记录一下自己的成长吧，一个技术小白，也没什么知识深度，但是希望这个blog能够陪着我一路成长。&lt;/p&gt;
+
+&lt;p id=&quot;build&quot;&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;说说这个blog是怎么实现的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;blog使用了github pages作为建站的基础，github pages前面我复制了一段代码，我理解的是github提供的一个静态网页制作的平台和运行平台吧，刚开始还使用着还感觉非常困难，但是到后来学会了找模板，减少了大量工作，现在就成了这个样子，还是挺美的，前辈的审美真的很赞！&lt;/p&gt;
+
+&lt;p&gt;github对jekyll的工程完美适配，所以我就使用了jekyll来进行搭建，本来想过用hexo的，但是这个程序很难修改代码，线下调试，而且jekyll提供的平台也是一个非常强大的平台，选择jekyll真是完美。&lt;/p&gt;
+
+&lt;h2 id=&quot;结束语&quot;&gt;结束语&lt;/h2&gt;
+
+&lt;p&gt;后面我会陆陆续续的在这上面记录下我的琐琐碎碎，也不知道blog怎么写，一个大牛说过写blog有三个阶段：&lt;/p&gt;
+
+&lt;p&gt;一个是在别人的平台上进行编写 ，比如csdn&lt;/p&gt;
+
+&lt;p&gt;上一个台阶就是自己搭建一个blog&lt;/p&gt;
+
+&lt;p&gt;再上一个台阶就到了github pages静态网站搭建&lt;/p&gt;
+
+&lt;p&gt;但是对我来说，我是直接跳到了网站搭建，这是一个很艰难的过程，现在看过去，也就这么回事，但是在整个思想周期中，我是花了很多时间去进行这方面的知识积累，虽然到现在也是半吊子一个，就凑合着吧。&lt;/p&gt;
+
+&lt;h2 id=&quot;续&quot;&gt;续&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;修补在博客上线过程中的问题总结&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;v041&quot;&gt;V0.4.1&lt;/h3&gt;
+
+&lt;p&gt;blog上线这段时间又遇到了很多不懂的地方，首先就是这个featured tags。&lt;/p&gt;
+
+&lt;p&gt;说明一下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这个sidebar是用来显示tag的，如果该tag使用次数超过两次，就会显示，这是我试出来的&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所以在使用过程如果遇到了没有显示featured tags，不用着急，多写几篇blog就出来了。&lt;/p&gt;
+
+&lt;h3 id=&quot;v042&quot;&gt;V0.4.2&lt;/h3&gt;
+
+&lt;p&gt;修复了评论区的问题，是多说那边的htread-key配置的原因。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Feb 2017 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/02/24/hello-2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/24/hello-2017/</guid>
+        
+        <category>生活</category>
+        
+        <category>学习</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>git命令学习笔记</title>
+        <description>&lt;h2 id=&quot;github操作命令集合&quot;&gt;github操作命令集合&lt;/h2&gt;
+
+&lt;h3 id=&quot;配置git&quot;&gt;配置Git&lt;/h3&gt;
+
+&lt;p&gt;本地创建ssh key：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &quot;maoyancan@qq.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;之后会要求确认路径和输入密码,默认的一路回车就行。&lt;/p&gt;
+
+&lt;p&gt;到github的settings add ssh key就是生成的key。&lt;/p&gt;
+
+&lt;h3 id=&quot;验证git配置&quot;&gt;验证git配置&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ ssh -T git@github.com
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。&lt;/p&gt;
+
+&lt;h3 id=&quot;配置本地的仓库我觉得是这个&quot;&gt;配置本地的仓库（我觉得是这个）&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git config --global user.name &quot;yancanmao&quot;
+$ git config --global user.email &quot;maoyancan@qq.com&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;添加远程地址&quot;&gt;添加远程地址&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin &quot;repository的名字&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;克隆仓库&quot;&gt;克隆仓库&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone /path/to/repository
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;提出更改到index&quot;&gt;提出更改到index&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &amp;lt;filename&amp;gt;(缺省表示更改所有文件)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;提交更改到head&quot;&gt;提交更改到head&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;代码提交信息&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;推送改动&quot;&gt;推送改动&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;master可以是任何一个远程分支。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin &amp;lt;server&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;能够将改动添加到所添加的服务器上。&lt;/p&gt;
+
+&lt;h2 id=&quot;分支&quot;&gt;分支&lt;/h2&gt;
+
+&lt;h3 id=&quot;创建分支&quot;&gt;创建分支&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout -b feature_x
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;切换到主分支&quot;&gt;切换到主分支&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;再把新建的分支删掉&quot;&gt;再把新建的分支删掉&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch -d feature_x
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;将分支推送到远端仓库&quot;&gt;将分支推送到远端仓库&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push origin &amp;lt;branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;除非将分支推送到远端仓库，不然该分支就是 不为他人所见的&lt;/p&gt;
+
+&lt;h2 id=&quot;更新与合并&quot;&gt;更新与合并&lt;/h2&gt;
+
+&lt;h3 id=&quot;更新本地最新改动&quot;&gt;更新本地最新改动&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;合并其他分支到当前分支&quot;&gt;合并其他分支到当前分支&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git merge &amp;lt;branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;git 会尝试去自动合并改动。遗憾的是，这可能并非每次都成功，并可能出现冲突（conflicts）。 这时候就需要你修改这些文件来手动合并这些冲突（conflicts）。改完之后，你需要执行如下命令以将它们标记为合并成功：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在合并改动之前，可以使用如下命令预览差异：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git diff &amp;lt;source_branch&amp;gt; &amp;lt;target_branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;标签&quot;&gt;标签&lt;/h3&gt;
+
+&lt;p&gt;创建一个叫1.0.0的标签&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git tag 1.0.0 1b2e1d63ff
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;1b2e1d63ff 是你想要标记的提交 ID的前 10 位字符。&lt;/p&gt;
+
+&lt;p&gt;获取提交ID&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;替换本地改动&quot;&gt;替换本地改动&lt;/h3&gt;
+
+&lt;p&gt;假如操作失误，可以替换掉本地改动&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout -- &amp;lt;filename&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;此命令会使用 HEAD 中的最新内容替换掉你的工作目录中的文件。
+已添加到暂存区的改动以及新文件都不会受到影响。&lt;/p&gt;
+
+&lt;p&gt;假如你想丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git fetch origin
+git reset --hard origin/master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;实用的一些使用方法&quot;&gt;实用的一些使用方法&lt;/h2&gt;
+
+&lt;p&gt;内建的图形化 git&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gitk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;彩色的 git 输出&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config color.ui true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;每个提交的信息只显示一行&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config format.pretty oneline
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;交互式添加文件到暂存区&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 24 Feb 2017 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/02/24/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/24/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        
+        <category>学习</category>
+        
+        <category>技术</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
