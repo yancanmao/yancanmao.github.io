@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      "Internet Architecture"
+subtitle:   ""
+date:       2018-12-03
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 技术
+---
+
+
 ## Internet Architecture
 
 #### performance

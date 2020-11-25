@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      "Distributed Database"
+subtitle:   ""
+date:       2018-11-27
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 技术
+---
+
+
 ## Distributed Database
 
 #### Distributed Database design: Fragmentation

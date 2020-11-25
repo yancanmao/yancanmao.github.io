@@ -1,11 +1,11 @@
 # Site settings
 title: MYC Blog
-SEOTitle: 毛言粲的博客 | MYC Blog
-header-img: img/home-bg.jpg
-email: maoyancan@qq.com
-description: "搬砖小能手，业余造轮子，嵌入式学徒最后跑去学别人造轮子，美哉美哉"
-keyword: "毛言粲, MYC, maoyancan, MAOYANCAN, myc, 博客, 个人网站, 互联网, 星儿"
-url: "https://www.maoyancan.cn"              # your host, for absolute URL
+SEOTitle: 毛言粲的博客 | Yancan Mao Blog
+header-img: img/home-bg-u.jpg
+email: maoyancan@u.nus.edu
+description: "Yancan Mao, a 2nd year Ph.D. Student in National University of Singapore"
+keyword: "Yancan Mao, 毛言粲, MYC, maoyancan, MAOYANCAN, myc, 博客, 个人网站, 互联网, 星儿"
+url: "https://yancanmao.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -60,11 +60,11 @@ disqus_username: myc-blog
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: [41efd2fbc866d71518c4f3eb7da3f9b6"]
 
 # Google Analytics
 ga_track_id: 'UA-92546511-1'            # Format: UA-xxxxxx-xx
-ga_domain: www.maoyancan.cn
+ga_domain: yancanmao.github.io
 
 
 

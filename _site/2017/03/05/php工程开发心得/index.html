@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="google-site-verification" content="wb3mtvGGWJ0FhS6TOO1glGvDCgmQ3XniUY0Q-eXF4K4" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="一个迷茫的寻找未来的半吊子程序员，现在百度实习，没啥事干，写个blog，模板借用大牛的，现在处于0.2版，等我熟悉了之后会出自己的版本的">
-    <meta name="keywords"  content="毛言粲, MYC, MAOYA0CAN, myc, 博客, 个人网站, 互联网, 星儿">
+    <meta name="description" content="Yancan Mao, a 2nd year Ph.D. Student in National University of Singapore">
+    <meta name="keywords"  content="Yancan Mao, 毛言粲, MYC, maoyancan, MAOYANCAN, myc, 博客, 个人网站, 互联网, 星儿">
     <meta name="theme-color" content="#000000">
     
-    <title>php工程开发心得 - 毛言粲的博客 | MYC Blog</title>
+    <title>php工程开发心得 - 毛言粲的博客 | Yancan Mao Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -182,7 +182,7 @@
                     <h1>php工程开发心得</h1>
                     
                     
-                    <h2 class="subheading"> 今年来百度后的开发总结"</h2>
+                    <h2 class="subheading"> "今年来百度后的开发总结"</h2>
                     
                     <span class="meta">Posted by MYC on March 5, 2017</span>
                 </div>
@@ -216,67 +216,94 @@
 
 <p>在最近的项目中，我又进行了js的相关开发，使用了ajax进行get请求的处理，虽然现在对js还是一知半解，不过还是有了很多的理解，整个从后端到前端的开发流程我都走了一遍，感觉还是最mvc框架，和web开发有了更深的理解后面也会趁着业余时间做一些相关学习，阅读相关书籍，到目前为止虽然感觉自己还是像搬砖一样的学习知识，但是感觉自己连砖都搬不动，还是很多基础知识不到位，到现在很多东西停在了理论上，需要多阅读代码，也需要多进行行业各方面的接触，多写程序，上传到github上，进行版本保留，多阅读别人的代码，这才是比较好的节奏。</p>
 
+<blockquote>
+  <p>反正有这个文档，我就在这里面写吧</p>
+</blockquote>
+
+<h3 id="php如果内存内存越界">php如果内存内存越界</h3>
+<p>设置不限制内存</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ini_set('memory_limit', '-1');
+</code></pre></div></div>
+
+<h3 id="诺亚任务问题排查">诺亚任务问题排查</h3>
+
+<p>如果有任务日志报警出现255的错误，这时候一般是报的php的异常，看日志直接对应到相应的报错时间点下的错误日志看到底是什么问题，一般能够排查出问题的。</p>
+
+<h3 id="听到了一群不懂的东西">听到了一群不懂的东西</h3>
+
+<p>akka、kafka、celery、spark、flink</p>
+
+<p>flask教程：</p>
+
+<p>http://www.pythondoc.com/flask-mega-tutorial/index.html</p>
+
+<h3 id="脚本发送邮件并且附件文件">脚本发送邮件，并且附件文件</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+time=`date -d "now" +%Y-%m-%d`
+echo "please see attachment." | mutt liubaoju@baidu.com maoyancan@baidu.com murong@baidu.com guojingjing07@baidu.com wuzhangyan@baidu.com -e "my_hdr from:liubaoju@baidu.com" -s "${time} 19:00 exported coupon data" -a "/home/work/var/data/lvshi/discountinfo/${time}-07-00-00-pm.xls"
+</code></pre></div></div>
+
+<h3 id="php工具中有很多脚本可能并不符合我们的需求可以进行改动">php工具中有很多脚本可能并不符合我们的需求，可以进行改动</h3>
+
+<p>比如说dataprovider，yii的CArrayDataProvider，他进行数据封装是对于一个完整的数据链，我们只传输部分数据偏移量就会出问题，这时候需要改源码，比如下面的这个方法，获取数据，如果注释的那一行就获取偏移量上的数据，但是对于如果只返回一部分数据的接口而言，这是有问题的，所以做了改动。</p>
+
+ 	/* Fetches the data from the persistent data storage.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * @return array list of data items
+ */
+protected function fetchData()
+{
+	if(($sort=$this-&gt;getSort())!==false &amp;&amp; ($order=$sort-&gt;getOrderBy())!='')
+		$this-&gt;sortData($this-&gt;getSortDirections($order));
+
+	if(($pagination=$this-&gt;getPagination())!==false)
+	{
+		$pagination-&gt;setItemCount($this-&gt;getTotalItemCount());
+        return $this-&gt;rawData;
+		//return array_slice($this-&gt;rawData, $pagination-&gt;getOffset(), $pagination-&gt;getLimit());
+	}
+	else
+		return $this-&gt;rawData;
+}
+</code></pre></div></div>
+
+<p>这是一种改动方法，但是改底层代码是不太恰当的，所以最好是将原来的方法覆盖掉，这样最稳妥。</p>
 
 
                 <hr style="visibility: hidden;">
 
-                
-                <!-- 多说 Share start -->
-                <div class="ds-share"
-                    style="text-align: right"
-                    data-thread-key="/2017/03/05/php工程开发心得"
-                    data-title="php工程开发心得"
-                    data-url="http://localhost:4000/2017/03/05/php%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/"
-                    data-images="http://localhost:4000/img/post-bg-universe.jpg"
-                    data-content="心得总结
-
-框架
-
-来到百度过后主要的工作还是web开发，本来以为我会做一点数据分析方面的项目开发，但是到目前感觉还是更偏向于php web开发，目前所进... | 毛言粲的博客 | MYC Blog " >
-                    <div class="ds-share-inline">
-                      <style> 
-                        .ds-share-icons-16 {display:none;} 
-                      </style>
-                      <ul class="ds-share-icons-16">
-                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
-                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
-                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
-                      </ul>
-                      <div class="ds-share-icons-more">
-                      </div>
-                    </div>
-                <hr>
-                </div>
-                <!-- 多说 Share end-->
                 
 
 
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2017/02/24/php%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-toggle="tooltip" data-placement="top" title="php学习笔记-1">
+                        <a href="/2017/02/24/%E9%9A%8F%E7%AC%94/" data-toggle="tooltip" data-placement="top" title="随笔">
                         Previous<br>
-                        <span>php学习笔记-1</span>
+                        <span>随笔</span>
                         </a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/2017/03/11/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6/" data-toggle="tooltip" data-placement="top" title="操作系统进程调度">
+                        Next<br>
+                        <span>操作系统进程调度</span>
+                        </a>
+                    </li>
                     
                 </ul>
 
 
                 
-                <!-- 多说评论框 start -->
-                <div class="comment">
-                    <div class="ds-thread"
-                        data-thread-key="/2017/03/05/php工程开发心得"
-                        data-title="php工程开发心得"
-                        data-url="http://localhost:4000/2017/03/05/php%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" >
-                    </div>
-                </div>
-                <!-- 多说评论框 end -->
-                
 
+                
+                <!-- disqus 评论框 start -->
+                <div class="comment">
+                    <div id="disqus_thread" class="disqus-thread"></div>
+                </div>
+                <!-- disqus 评论框 end -->
                 
 
             </div>  
@@ -312,17 +339,75 @@
                     <div class="tags">
         				
                             
-                				<a href="/tags/#学习" title="学习" rel="4">
+                				<a href="/tags/#学习" title="学习" rel="18">
                                     学习
                                 </a>
                             
         				
                             
-                				<a href="/tags/#技术" title="技术" rel="2">
+                				<a href="/tags/#技术" title="技术" rel="5">
                                     技术
                                 </a>
                             
         				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#php" title="php" rel="6">
+                                    php
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#算法" title="算法" rel="3">
+                                    算法
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#web" title="web" rel="4">
+                                    web
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#phpUnit" title="phpUnit" rel="2">
+                                    phpUnit
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#分布式" title="分布式" rel="2">
+                                    分布式
+                                </a>
                             
         				
                             
@@ -350,26 +435,23 @@
 
 
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    // dynamic User by Hux
-    var _user = 'MYC';
 
-    // duoshuo comment query.
-    var duoshuoQuery = {short_name: _user };
+
+
+<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = "myc-blog";
+    var disqus_identifier = "/2017/03/05/php工程开发心得";
+    var disqus_url = "http://localhost:4000/2017/03/05/php%E5%B7%A5%E7%A8%8B%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/";
+
     (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<!-- 多说公共JS代码 end -->
-
-
-
+<!-- disqus 公共JS代码 end -->
 
 
 
@@ -463,8 +545,8 @@
                     
                     
                 </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; MYC Blog 2017
+                <!-- <p class="copyright text-muted">
+                    Copyright &copy; MYC Blog 2020
                     <br>
                     Theme by <a href="http://www.maoyancan.cn">MYC</a> |
                     <iframe
@@ -472,7 +554,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=yancanmao&repo=yancanmao.github.io&type=star&count=true" >
                     </iframe>
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
@@ -561,7 +643,7 @@
 <script>
     // dynamic User by Hux
     var _gaId = 'UA-92546511-1';
-    var _gaDomain = 'www.maoyancan.cn';
+    var _gaDomain = 'yancanmao.github.io';
 
     // Originial
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -576,6 +658,20 @@
 
 
 <!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = '41efd2fbc866d71518c4f3eb7da3f9b6"';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 
 

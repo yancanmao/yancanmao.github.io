@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      "Distributed System"
+subtitle:   ""
+date:       2018-11-15
+author:     "MYC"
+header-img: "img/post-bg-universe.jpg"
+catalog: true
+tags:
+    - 学习 
+    - 技术
+---
+
 ## Distributed System Skeleton
 
 #### lecture2
