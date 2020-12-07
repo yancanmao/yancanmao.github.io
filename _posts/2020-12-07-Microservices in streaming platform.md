@@ -79,3 +79,4 @@ Application-level pipelines are created by simply chaining together multiple mic
 ### References
 
 [Why Microservices Running in Containers Need a Streaming Platform](https://thenewstack.io/microservices-running-containers-need-streaming-platform/)
+[Survey on Stream Processing & MicroServices](https://github.com/Xtra-Computing/briskstream/issues/15)
