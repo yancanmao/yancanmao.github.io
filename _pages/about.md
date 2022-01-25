@@ -12,7 +12,7 @@ redirect_from:
 About me
 ======
 
-I am currently a Ph.D. candidate at the School of Computing, National University of Singapore, supervised by [Prof. Richard T.B. Ma](https://www.comp.nus.edu.sg/~hebs/). 
+I am currently a Ph.D. candidate at the School of Computing, National University of Singapore, supervised by [Prof. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
 <!-- My research interests are in hardware accelerator, FPGAs, heterogeneous computing, graph processing and database systems. -->
 My research interests are distributed stream processing and configurations management. I am currently working on Apache Flink to implement my research proposals.
@@ -46,7 +46,7 @@ Publications
 
 * **Yancan Mao**, Yuan Huang, Runxin Tian, Xin Wang, and Richard T. B. Ma. " Trisk: Task-Centric Data Stream Reconfiguration "  Proceedings of the ACM Symposium on Cloud Computing. Association for Computing Machinery (**SoCC**) 2021. [[paper](https://doi.org/10.1145/3472883.3487010)][[Code](https://github.com/sane-lab/Trisk)] 
 
-Shuhao Zhang, **Yancan Mao**, Jiong He, Philipp M. Grulich, Steffen Zeuch, Bingsheng He, Richard T. B. Ma, and Volker Markl. " Parallelizing Intra-Window Join on Multicores: An Experimental Study " Proceedings of the 2021 International Conference on Management of Data (**SIGMOD**) 2021. [[paper](https://doi-org.libproxy1.nus.edu.sg/10.1145/3448016.3452793)][[Code](https://github.com/intellistream/AllianceDB)]
+* Shuhao Zhang, **Yancan Mao**, Jiong He, Philipp M. Grulich, Steffen Zeuch, Bingsheng He, Richard T. B. Ma, and Volker Markl. " Parallelizing Intra-Window Join on Multicores: An Experimental Study " Proceedings of the 2021 International Conference on Management of Data (**SIGMOD**) 2021. [[paper](https://doi-org.libproxy1.nus.edu.sg/10.1145/3448016.3452793)][[Code](https://github.com/intellistream/AllianceDB)]
 
 
 Work Experiences
