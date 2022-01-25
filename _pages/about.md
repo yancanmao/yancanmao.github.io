@@ -85,4 +85,5 @@ Professional Services
 
 
 <br/><br/>
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=H5M20D9A_bB0y1IzxQRSCXjjDcaDJ1bVvOfPMO5fnfc&cl=ffffff&w=a"></script>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=400&t=n&d=H5M20D9A_bB0y1IzxQRSCXjjDcaDJ1bVvOfPMO5fnfc"></script>
+
