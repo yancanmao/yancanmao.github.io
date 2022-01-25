@@ -12,7 +12,9 @@ redirect_from:
 About me
 ======
 
-I am currently a Ph.D. candidate at the School of Computing, National University of Singapore, supervised by [Prof. Richard T. B. Ma](https://richard-ma.netlify.app/). 
+I am currently a Ph.D. candidate at the School of Computing, National University of Singapore, supervised by [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
+
+I am also collaborating with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) for interesting streaming system related topics.
 
 <!-- My research interests are in hardware accelerator, FPGAs, heterogeneous computing, graph processing and database systems. -->
 My research interests are distributed stream processing and configurations management. I am currently working on Apache Flink to implement my research proposals.
