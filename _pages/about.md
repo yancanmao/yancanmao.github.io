@@ -37,8 +37,8 @@ Email: maoyancan@comp.nus.edu.sg -->
 
 Research Projects
 ======
-* An policy-guided control plane to automatically manage the lifecyle of streaming jobs in data center with varying performance requirements.
-* An efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
+* Policy-guided control plane to automatically manage the lifecyle of streaming jobs in data center with varying performance requirements.
+* Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
 * Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
 
 
@@ -80,8 +80,8 @@ Teaching Experiences
 
 Professional Services
 ======
-* External reviewer of CCGrid 2021
-* External reviewer of ICDCS Workshop 2021
+* Reviewer of CCGrid 2021
+* Reviewer of ICDCS Workshop 2021
 
 
 <br/><br/>
