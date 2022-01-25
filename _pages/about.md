@@ -69,7 +69,7 @@ Teaching Experiences
 ======
 * Teaching Assistant of CS4226: Internet Architecture
   * NUS, 2020&2021 First semester
-* Teaching Assistant of CS2105: Introduction of Internet
+* Teaching Assistant of CS2105: Introduction to Computer Networks
   * NUS, 2020&2021 Second semester
 
 <!-- Talks
