@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yancan Mao / Homepage"
 title_separator          : "-"
 name                     : &name "Yancan Mao"
-description              : &description "Mao Yancan is currently a Ph.D. Student at National University of Singapore on the topic of distributed stream processing and management."
+description              : &description "Mao Yancan is currently a Ph.D. Candidate at National University of Singapore on the topic of distributed stream processing and management."
 url                      : https://yancanmao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yancanmao.github.io"
@@ -175,7 +175,7 @@ kramdown:
 
 # Collections
 collections:
-  about:
+  teaching:
     output: true
     permalink: /:collection/:path/
   publications:
