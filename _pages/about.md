@@ -57,9 +57,9 @@ Work Experiences
 
 Honors & Awards
 ======
-* Flink Forward Asia Hackathon 2nd Place (2 out of 179 teams) (2022)
+* Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams) (2022)
 * Research Scholarships of National University of Singapore (2019)
-* Excellent Graduates of UESTC 2018 (Top 10\%) (2018)
+* Excellent Graduates of UESTC 2018 (Top 10%) (2018)
 
 
 Teaching Experiences
