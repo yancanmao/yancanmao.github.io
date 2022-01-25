@@ -61,6 +61,7 @@ Honors & Awards
 ======
 * Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams) (2022)
 * Research Scholarships of National University of Singapore (2019)
+* Alibaba Cloud Hackathon of Singapore 2nd Place (2 out of 20 teams) (2018)
 * Excellent Graduates of UESTC 2018 (Top 10%) (2018)
 
 
