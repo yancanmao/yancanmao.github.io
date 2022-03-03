@@ -40,7 +40,8 @@ Research Projects
 * Policy-guided control plane to automatically manage the lifecyle of streaming jobs in data center with varying performance requirements.
 * Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
-* StreamSwitch:  A Control Plane for Latency Guaranteed Stateful Streaming
+* AllianceDB: parallelizing intra-window stream join on multicores.
+* StreamSwitch:  A Control Plane for Latency Guaranteed Stateful Streaming Processing.
 
 Publications
 ======
