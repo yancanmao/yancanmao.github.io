@@ -39,9 +39,10 @@ Research Projects
 ======
 * Policy-guided control plane to automatically manage the lifecyle of streaming jobs in data center with varying performance requirements.
 * Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
+* [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
 * [AllianceDB](https://intellistream.github.io/AllianceDB/): parallelizing intra-window stream join on multicores.
-* StreamSwitch:  A Control Plane for Latency Guaranteed Stateful Streaming Processing.
+* StreamSwitch: A Control Plane for Latency Guaranteed Stateful Streaming Processing.
 
 Publications
 ======
@@ -57,6 +58,8 @@ Work Experiences
 * Baidu - Software Engineer Intern (Dec 2016 - Aug 2017)
   * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
 
+* TikTok - Research Intern (Apr 2022 - Now)
+  * Apache Flink runtime optimization.
 
 Honors & Awards
 ======
@@ -81,6 +84,8 @@ Professional Services
 ======
 * Reviewer of CCGrid 2021
 * Reviewer of ICDCS Workshop 2021
+* External reviewer of ICPP 2021
+* External reviewer of SIGKDD 2022
 
 
 <br/><br/>
