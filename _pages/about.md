@@ -16,7 +16,6 @@ I am currently a Ph.D. candidate at the School of Computing, National University
 
 I am also collaborating with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) for interesting streaming system related topics.
 
-<!-- My research interests are in hardware accelerator, FPGAs, heterogeneous computing, graph processing and database systems. -->
 My research interests are distributed stream processing and configurations management. I am currently working on Apache Flink to implement my research proposals.
 
 Education
@@ -37,7 +36,7 @@ Email: maoyancan@comp.nus.edu.sg -->
 
 Research Projects
 ======
-* Policy-guided control plane to automatically manage the lifecyle of streaming jobs in data center with varying performance requirements.
+* Policy-guided control plane to automatically manage streaming jobs in large-scale data center.
 * Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
 * [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
@@ -55,10 +54,10 @@ Publications
 
 Work Experiences
 ======
-* Baidu - Software Engineer Intern (Dec 2016 - Aug 2017)
+* Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
   * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
 
-* TikTok - Research Intern (Apr 2022 - Now)
+* TikTok (Singapore) - Research Intern (Apr 2022 - Now)
   * Apache Flink runtime optimization.
 
 Honors & Awards
@@ -72,9 +71,9 @@ Honors & Awards
 Teaching Experiences
 ======
 * Teaching Assistant of CS4226: Internet Architecture
-  * NUS, 2020&2021 First Semester
+  * NUS, 2020 and 2021, First Semester
 * Teaching Assistant of CS2105: Introduction to Computer Networks
-  * NUS, 2020&2021 Second Semester
+  * NUS, 2020 and 2021, Second Semester
 
 Talks
 ======
@@ -87,6 +86,7 @@ Professional Services
 * External reviewer of TPDS 2021
 * External reviewer of ICPP 2021
 * External reviewer of SIGKDD 2022
+* External reviewer of ICPP 2022
 
 
 <br/><br/>
