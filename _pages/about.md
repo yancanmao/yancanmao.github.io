@@ -46,7 +46,7 @@ Research Projects
 Publications
 ======
 
-* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[To be appeared][code](https://intellistream.github.io/MorphStream/)] 
+* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [To be appeared][[code](https://intellistream.github.io/MorphStream/)] 
 
 * **Yancan Mao**, Yuan Huang, Runxin Tian, Xin Wang, and Richard T. B. Ma. "Trisk: Task-Centric Data Stream Reconfiguration."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2021. [[paper](https://doi.org/10.1145/3472883.3487010)][[code](https://github.com/sane-lab/Trisk)] 
 
