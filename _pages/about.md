@@ -41,12 +41,14 @@ Research Projects
 * [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
 * [AllianceDB](https://intellistream.github.io/AllianceDB/): parallelizing intra-window stream join on multicores.
-* StreamSwitch: A Control Plane for Latency Guaranteed Stateful Streaming Processing.
+* [StreamSwitch](https://github.com/sane-lab/StreamSwitch): A Control Plane for Latency Guaranteed Stateful Streaming Processing.
 
 Publications
 ======
 
 * **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [To be appeared][[code](https://intellistream.github.io/MorphStream/)] 
+
+* Zhaochen She, **Yancan Mao**, Hailin Xiang, Xin Wang, and Richard T. B. Ma. "StreamSwitch: Fulfilling Latency Service-Layer Agreement for Stateful Streaming."  Proceedings of the 2023 IEEE International Conference on Computer Communications (**INFOCOM**) 2023. [To be appeared][[code](https://github.com/sane-lab/StreamSwitch)] 
 
 * **Yancan Mao**, Yuan Huang, Runxin Tian, Xin Wang, and Richard T. B. Ma. "Trisk: Task-Centric Data Stream Reconfiguration."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2021. [[paper](https://doi.org/10.1145/3472883.3487010)][[code](https://github.com/sane-lab/Trisk)] 
 
