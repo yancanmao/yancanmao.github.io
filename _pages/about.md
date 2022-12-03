@@ -46,7 +46,7 @@ Research Projects
 Publications
 ======
 
-* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [To be appeared][[code](https://intellistream.github.io/MorphStream/)] 
+* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[paper](https://shuhaozhangtony.github.io/assets/pdf/papers/MorphStream.pdf)][[code](https://intellistream.github.io/MorphStream/)] 
 
 * Zhaochen She, **Yancan Mao**, Hailin Xiang, Xin Wang, and Richard T. B. Ma. "StreamSwitch: Fulfilling Latency Service-Layer Agreement for Stateful Streaming."  Proceedings of the 2023 IEEE International Conference on Computer Communications (**INFOCOM**) 2023. [To be appeared][[code](https://github.com/sane-lab/StreamSwitch)] 
 
@@ -74,7 +74,7 @@ Honors & Awards
 Teaching Experiences
 ======
 * Teaching Assistant of CS4226: Internet Architecture
-  * NUS, 2020 and 2021, First Semester
+  * NUS, 2020, 2021, 2022, First Semester
 * Teaching Assistant of CS2105: Introduction to Computer Networks
   * NUS, 2020 and 2021, Second Semester
 
