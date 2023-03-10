@@ -36,11 +36,11 @@ Email: maoyancan@comp.nus.edu.sg -->
 
 Research Projects
 ======
-* Policy-guided control plane to automatically manage streaming jobs in large-scale data center.
-* Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
+* StreamPacker: Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
+* StreamOps: Policy-guided control plane to automatically manage streaming jobs in large-scale data center.
 * [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
-* [AllianceDB](https://intellistream.github.io/AllianceDB/): parallelizing intra-window stream join on multicores.
+* [AllianceDB](https://intellistream.github.io/AllianceDB/): Parallelizing intra-window stream join on multicores.
 * [StreamSwitch](https://github.com/sane-lab/StreamSwitch): A Control Plane for Latency Guaranteed Stateful Streaming Processing.
 
 Publications
@@ -57,11 +57,12 @@ Publications
 
 Work Experiences
 ======
-* Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
-  * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Now)
   * Apache Flink runtime optimization.
+
+* Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
+  * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
 
 Honors & Awards
 ======
@@ -84,12 +85,12 @@ Talks
 
 Professional Services
 ======
-* Reviewer of CCGrid 2021
-* Reviewer of ICDCS Workshop 2021
-* External reviewer of TPDS 2021
-* External reviewer of ICPP 2021
-* External reviewer of SIGKDD 2022
 * External reviewer of ICPP 2022
+* External reviewer of SIGKDD 2022
+* External reviewer of ICPP 2021
+* External reviewer of TPDS 2021
+* Reviewer of ICDCS Workshop 2021
+* Reviewer of CCGrid 2021
 
 
 <br/><br/>
