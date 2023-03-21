@@ -59,7 +59,7 @@ Work Experiences
 ======
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
-  * Designing and developing the policy-guided runtime management system for cluster-wide streaming services.
+  * Designed and developed the policy-guided runtime management system for cluster-wide streaming services.
 
 * Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
   * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
