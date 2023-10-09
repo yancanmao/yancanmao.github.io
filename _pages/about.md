@@ -50,7 +50,7 @@ Publications
 
 * **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[paper](https://intellistream.github.io/downloads/papers/Sesame_CR.pdf)][[code](https://intellistream.github.io/MorphStream/)] 
 
-* Zhaochen She, **Yancan Mao**, Hailin Xiang, Xin Wang, and Richard T. B. Ma. "StreamSwitch: Fulfilling Latency Service-Layer Agreement for Stateful Streaming."  Proceedings of the 2023 IEEE International Conference on Computer Communications (**INFOCOM**) 2023. [To be appeared][[code](https://github.com/sane-lab/StreamSwitch)] 
+* Zhaochen She, **Yancan Mao**, Hailin Xiang, Xin Wang, and Richard T. B. Ma. "StreamSwitch: Fulfilling Latency Service-Layer Agreement for Stateful Streaming."  Proceedings of the 2023 IEEE International Conference on Computer Communications (**INFOCOM**) 2023. [[paper](https://ieeexplore.ieee.org/abstract/document/10228903)][[code](https://github.com/sane-lab/StreamSwitch)] 
 
 * **Yancan Mao**, Yuan Huang, Runxin Tian, Xin Wang, and Richard T. B. Ma. "Trisk: Task-Centric Data Stream Reconfiguration."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2021. [[paper](https://doi.org/10.1145/3472883.3487010)][[code](https://github.com/sane-lab/Trisk)] 
 
@@ -64,7 +64,7 @@ Work Experiences
   * Designed and developed the policy-guided runtime management system for cluster-wide streaming services.
 
 * Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
-  * Full-stack web developement for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
+  * Full-stack web development for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
 
 Honors & Awards
 ======
