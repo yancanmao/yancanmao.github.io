@@ -68,6 +68,7 @@ Work Experiences
 
 Honors & Awards
 ======
+* Research Achievement Award of National University of Singapore (2023)
 * Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams) (2021)
 * Research Scholarships of National University of Singapore (2019)
 * Alibaba Cloud Hackathon of Singapore 2nd Place (2 out of 20 teams) (2018)
