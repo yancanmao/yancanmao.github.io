@@ -88,6 +88,8 @@ Talks
 
 Professional Services
 ======
+* Reviewer of TPDS 2024
+* Reviewer of DASFAA 2024
 * Reviewer of ICPP 2023
 * Reviewer of S&C 2023
 * External reviewer of ICPP 2022
