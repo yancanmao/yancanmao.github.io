@@ -77,10 +77,12 @@ Honors & Awards
 
 Teaching Experiences
 ======
+* Teaching Assistant of CS6204: Advanced Topics in Networking
+  * NUS, 2024
 * Teaching Assistant of CS4226: Internet Architecture
-  * NUS, 2020, 2021, 2022, First Semester
+  * NUS, 2020, 2021, 2022, 2023
 * Teaching Assistant of CS2105: Introduction to Computer Networks
-  * NUS, 2020 and 2021, Second Semester
+  * NUS, 2020, 2021
 
 Talks
 ======
