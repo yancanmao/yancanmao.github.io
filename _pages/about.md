@@ -46,6 +46,8 @@ Research Projects
 Publications
 ======
 
+* **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Message Queue System in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2023. [To Appear] 
+
 * **Yancan Mao**, Zhanghao Chen, Yifan Zhang, Meng Wang, Yong Fang, Guanghui Zhang, Rui Shi, and Richard T. B. Ma. "StreamOps: Cloud-Native Runtime Management for Streaming Services in ByteDance."  Proceedings of the VLDB (**VLDB**) Endowment, 2023. [[paper](https://www.vldb.org/pvldb/vol16/p3501-mao.pdf)] 
 
 * **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[paper](https://intellistream.github.io/downloads/papers/Sesame_CR.pdf)][[code](https://intellistream.github.io/MorphStream/)] 
@@ -61,7 +63,7 @@ Work Experiences
 ======
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
-  * Co-designed and co-developed the policy-guided runtime management system StreamOps for cluster-wide strming services in ByteDance cloud.
+  * Co-designed and co-developed the policy-guided runtime management system StreamOps for cluster-wide streaming services in ByteDance cloud.
 
 * Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
   * Full-stack web development for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
