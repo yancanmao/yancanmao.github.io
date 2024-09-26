@@ -46,7 +46,7 @@ Research Projects
 Publications
 ======
 
-* **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Message Queue System in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2023. [To Appear] 
+* **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Message Queue System in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [To Appear] 
 
 * **Yancan Mao**, Zhanghao Chen, Yifan Zhang, Meng Wang, Yong Fang, Guanghui Zhang, Rui Shi, and Richard T. B. Ma. "StreamOps: Cloud-Native Runtime Management for Streaming Services in ByteDance."  Proceedings of the VLDB (**VLDB**) Endowment, 2023. [[paper](https://www.vldb.org/pvldb/vol16/p3501-mao.pdf)] 
 
