@@ -12,16 +12,19 @@ redirect_from:
 About me
 ======
 
-I am currently a Ph.D. candidate at the School of Computing, National University of Singapore, supervised by [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
+I am currently a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I focus on cloud-native data systems and stream processing technologies. 
+I completed my PhD at NUS under the supervision of  [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
-I am also collaborating with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) for interesting streaming system related topics.
+I actively collaborate with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on innovative research in streaming systems and related topics.
 
-My research interests are distributed stream processing and configurations management. I am currently working on Apache Flink to implement my research proposals.
+My primary research interests include distributed stream processing, resource management, and configuration optimization. 
+I am deeply involved in the Apache Flink ecosystem, implementing novel research ideas to address challenges in large-scale data processing and streaming systems.
+
 
 Education
 ======
 
-* National University of Singapore (Sep 2019 - Now)
+* National University of Singapore (Sep 2019 - Aug 2024)
   * Ph.D. in Computer Science
 
 * National University of Singapore (Aug 2018 - Sep 2019)
@@ -46,7 +49,7 @@ Research Projects
 Publications
 ======
 
-* **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Message Queue System in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [To Appear] 
+* **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Streaming Data Layer in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [[paper](https://dl.acm.org/doi/pdf/10.1145/3698038.3698536)] 
 
 * **Yancan Mao**, Zhanghao Chen, Yifan Zhang, Meng Wang, Yong Fang, Guanghui Zhang, Rui Shi, and Richard T. B. Ma. "StreamOps: Cloud-Native Runtime Management for Streaming Services in ByteDance."  Proceedings of the VLDB (**VLDB**) Endowment, 2023. [[paper](https://www.vldb.org/pvldb/vol16/p3501-mao.pdf)] 
 
@@ -70,6 +73,7 @@ Work Experiences
 
 Honors & Awards
 ======
+* Outstanding Research Projects of the Year in ByteDance Academic Committee (2023)
 * Research Achievement Award of National University of Singapore (2023)
 * Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams) (2021)
 * Research Scholarships of National University of Singapore (2019)
@@ -92,11 +96,12 @@ Talks
 
 Professional Services
 ======
+* Reviewer of BigData 2024
 * Reviewer of FGCS 2024
-* Reviewer of TPDS 2024
-* Reviewer of DASFAA 2024
-* Reviewer of ICPP 2023
-* Reviewer of S&C 2023
+* External Reviewer of TPDS 2024
+* External Reviewer of DASFAA 2024
+* External Reviewer of ICPP 2023
+* External Reviewer of S&C 2023
 * External reviewer of ICPP 2022
 * External reviewer of SIGKDD 2022
 * External reviewer of ICPP 2021
