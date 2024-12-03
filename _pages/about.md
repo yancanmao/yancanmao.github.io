@@ -21,30 +21,18 @@ My primary research interests include distributed stream processing, resource ma
 I am deeply involved in the Apache Flink ecosystem, implementing novel research ideas to address challenges in large-scale data processing and streaming systems.
 
 
-Education
-======
-
-* National University of Singapore (Sep 2019 - Aug 2024)
-  * Ph.D. in Computer Science
-
-* National University of Singapore (Aug 2018 - Sep 2019)
-  * Master of Computing
-
-* University of Electronic Science and Technology of China (Aug 2014 - Jun 2018)
-  * Bachelor of Software Engineering
-
 <!-- Contact
 ======
 Email: maoyancan@comp.nus.edu.sg -->
 
-Research Projects
+<!-- Research Projects
 ======
 * StreamPacker: Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
 * StreamOps: Policy-guided control plane to automatically manage streaming jobs in large-scale data center.
 * [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
 * [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
 * [AllianceDB](https://intellistream.github.io/AllianceDB/): Parallelizing intra-window stream join on multicores.
-* [StreamSwitch](https://github.com/sane-lab/StreamSwitch): A Control Plane for Latency Guaranteed Stateful Streaming Processing.
+* [StreamSwitch](https://github.com/sane-lab/StreamSwitch): A Control Plane for Latency Guaranteed Stateful Streaming Processing. -->
 
 Publications
 ======
@@ -61,6 +49,18 @@ Publications
 
 * Shuhao Zhang, **Yancan Mao**, Jiong He, Philipp M. Grulich, Steffen Zeuch, Bingsheng He, Richard T. B. Ma, and Volker Markl. "Parallelizing Intra-Window Join on Multicores: An Experimental Study." Proceedings of the 2021 International Conference on Management of Data (**SIGMOD**) 2021. [[paper](https://doi-org.libproxy1.nus.edu.sg/10.1145/3448016.3452793)][[code](https://github.com/intellistream/AllianceDB)]
 
+
+Education
+======
+
+* National University of Singapore (Sep 2019 - Aug 2024)
+  * Ph.D. in Computer Science
+
+* National University of Singapore (Aug 2018 - Sep 2019)
+  * Master of Computing
+
+* University of Electronic Science and Technology of China (Aug 2014 - Jun 2018)
+  * Bachelor of Software Engineering
 
 Work Experiences
 ======
