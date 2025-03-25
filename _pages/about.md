@@ -37,6 +37,8 @@ Email: maoyancan@comp.nus.edu.sg -->
 Publications
 ======
 
+* Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors. " IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [To Appear]
+
 * **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Streaming Data Layer in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [[paper](https://dl.acm.org/doi/pdf/10.1145/3698038.3698536)] 
 
 * **Yancan Mao**, Zhanghao Chen, Yifan Zhang, Meng Wang, Yong Fang, Guanghui Zhang, Rui Shi, and Richard T. B. Ma. "StreamOps: Cloud-Native Runtime Management for Streaming Services in ByteDance."  Proceedings of the VLDB (**VLDB**) Endowment, 2023. [[paper](https://www.vldb.org/pvldb/vol16/p3501-mao.pdf)] 
@@ -73,9 +75,9 @@ Work Experiences
 
 Honors & Awards
 ======
+* Research Achievement Award of National University of Singapore (2024)
 * Outstanding Research Projects of the Year in ByteDance Academic Committee (2023)
-* Research Achievement Award of National University of Singapore (2023)
-* Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams) (2021)
+* Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams, $10,000 awarded) (2021)
 * Research Scholarships of National University of Singapore (2019)
 * Alibaba Cloud Hackathon of Singapore 2nd Place (2 out of 20 teams) (2018)
 * Excellent Graduates of UESTC 2018 (Top 10%) (2018)
