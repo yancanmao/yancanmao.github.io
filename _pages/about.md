@@ -37,13 +37,13 @@ Email: maoyancan@comp.nus.edu.sg -->
 Publications
 ======
 
-* Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors. " IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [To Appear][[code](https://intellistream.github.io/MorphStream/)]
+* Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors. " IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [To Appear][[code](https://github.com/intellistream/MorphStream)]
 
 * **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Streaming Data Layer in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [[paper](https://dl.acm.org/doi/pdf/10.1145/3698038.3698536)] 
 
 * **Yancan Mao**, Zhanghao Chen, Yifan Zhang, Meng Wang, Yong Fang, Guanghui Zhang, Rui Shi, and Richard T. B. Ma. "StreamOps: Cloud-Native Runtime Management for Streaming Services in ByteDance."  Proceedings of the VLDB (**VLDB**) Endowment, 2023. [[paper](https://www.vldb.org/pvldb/vol16/p3501-mao.pdf)] 
 
-* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[paper](https://intellistream.github.io/downloads/papers/Sesame_CR.pdf)][[code](https://intellistream.github.io/MorphStream/)] 
+* **Yancan Mao**, Jianjun Zhao, Haikun Liu, and Shuhao Zhang, Volker Markl. "MorphStream: Adaptive Scheduling for Scalable Transactional Stream Processing on Multicores."  Proceedings of the 2023 International Conference on Management of Data (**SIGMOD**) 2023. [[paper](https://intellistream.github.io/downloads/papers/Sesame_CR.pdf)][[code](https://github.com/intellistream/MorphStream)] 
 
 * Zhaochen She, **Yancan Mao**, Hailin Xiang, Xin Wang, and Richard T. B. Ma. "StreamSwitch: Fulfilling Latency Service-Layer Agreement for Stateful Streaming."  Proceedings of the 2023 IEEE International Conference on Computer Communications (**INFOCOM**) 2023. [[paper](https://ieeexplore.ieee.org/abstract/document/10228903)][[code](https://github.com/sane-lab/StreamSwitch)] 
 
