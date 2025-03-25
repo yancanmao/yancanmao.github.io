@@ -37,7 +37,7 @@ Email: maoyancan@comp.nus.edu.sg -->
 Publications
 ======
 
-* Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors. " IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [To Appear]
+* Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors. " IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [To Appear][[code](https://intellistream.github.io/MorphStream/)]
 
 * **Yancan Mao**, Ruohang Yin, Liyuan Lei, Peng Ye, Shengfu Zou, Shizheng Tang, Yunzhe Guo, Ye Yuan, Xiaochen Yu, Bo Wan, Changli Gao, Guanghui Zhang, Jian Shen, Rui Shi, and Richard T. B. Ma. "ByteMQ: A Cloud-native Streaming Data Layer in ByteDance."  Proceedings of the ACM Symposium on Cloud Computing (**SoCC**) 2024. [[paper](https://dl.acm.org/doi/pdf/10.1145/3698038.3698536)] 
 
