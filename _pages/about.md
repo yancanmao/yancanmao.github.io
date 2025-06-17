@@ -12,7 +12,8 @@ redirect_from:
 About me
 ======
 
-I am currently a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I focus on cloud-native data systems and stream processing technologies. 
+I am currently a Software Engineer at ByteDance Singapore, where I focus on developing AI Infrastructure Ray for large-scale distributed machine learning workload.
+Before this, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I focused on cloud-native data systems and stream processing technologies. 
 I completed my PhD at NUS under the supervision of  [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
 I actively collaborate with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on innovative research in streaming systems and related topics.
