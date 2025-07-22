@@ -12,7 +12,7 @@ redirect_from:
 About me
 ======
 
-I am currently a Software Engineer at ByteDance Singapore, where I focus on developing AI Infrastructure Ray for large-scale distributed machine learning workload.
+I am currently a System Engineer at ByteDance Singapore, where I focus on developing AI Infrastructure Ray for large-scale distributed machine learning workloads.
 Before this, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I focused on cloud-native data systems and stream processing technologies. 
 I completed my PhD at NUS under the supervision of  [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
