@@ -13,7 +13,7 @@ About me
 ======
 
 I am currently a System Engineer and Researcher at ByteDance Singapore, where I focus on developing AI Infrastructure Ray for large-scale distributed machine learning workloads.
-Before this, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I focused on cloud-native data systems and stream processing technologies. 
+Previously, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), where I concentrated on cloud-native data systems and stream processing technologies. 
 I completed my PhD at NUS under the supervision of  [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
 I actively collaborate with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on innovative research in streaming systems and related topics.
@@ -26,19 +26,11 @@ I am deeply involved in the Apache Flink ecosystem, implementing novel research 
 ======
 Email: maoyancan@comp.nus.edu.sg -->
 
-<!-- Research Projects
-======
-* StreamPacker: Efficient state management framework for streaming system to control state operations in streaming jobs in fine-grained.
-* StreamOps: Policy-guided control plane to automatically manage streaming jobs in large-scale data center.
-* [Trisk](https://github.com/sane-lab/Trisk): Task-centric control plane for distributed stream processing optimization.
-* [MorphStream](https://intellistream.github.io/MorphStream/): Model-guided Adaptive Scheduling for Scalable Transactional Stream Processing.
-* [AllianceDB](https://intellistream.github.io/AllianceDB/): Parallelizing intra-window stream join on multicores.
-* [StreamSwitch](https://github.com/sane-lab/StreamSwitch): A Control Plane for Latency Guaranteed Stateful Streaming Processing. -->
 
 Publications
 ======
 
-* **Yancan Mao**, Shuhao Zhang, and Richard T. B. Ma. "Spacker: Unified State Migration for Distributed Streaming." IEEE International Conference on Distributed Computing Systems (**ICDCS**) 2025. [To Appear][[code](https://github.com/sane-lab/Spacker)]
+* **Yancan Mao**, Shuhao Zhang, and Richard T. B. Ma. "Spacker: Unified State Migration for Distributed Streaming." IEEE International Conference on Distributed Computing Systems (**ICDCS**) 2025. [[paper](https://ieeexplore.ieee.org/abstract/document/11183749)][[code](https://github.com/sane-lab/Spacker)]
 
 * Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, and Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors." IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [[paper](https://ieeexplore-ieee-org.libproxy1.nus.edu.sg/abstract/document/10949743)][[code](https://github.com/intellistream/MorphStream)]
 
