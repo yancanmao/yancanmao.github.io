@@ -18,7 +18,7 @@ I completed my PhD at NUS under the supervision of  [Dr. Richard T. B. Ma](https
 
 I actively collaborate with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on innovative research in streaming systems and related topics.
 
-My primary research interests include distributed stream processing, resource management, and configuration optimization. 
+My primary research interests include heterogeneous ML workloads orchestration, distributed stream processing, and configuration optimization. 
 I am deeply involved in the Apache Flink ecosystem, implementing novel research ideas to address challenges in large-scale data processing and streaming systems.
 
 
