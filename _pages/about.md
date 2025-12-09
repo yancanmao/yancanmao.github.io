@@ -30,6 +30,9 @@ Email: maoyancan@comp.nus.edu.sg -->
 Publications
 ======
 
+* Zhaochen She\*, **Yancan Mao\***, and Richard T. B. Ma. "Sluice: End-to-End Latency Guarantee for Long-running Dataflow Systems."  Proceedings of the 2026 IEEE International Conference on Computer Communications (**INFOCOM**) 2026. [To Appear] 
+
+
 * **Yancan Mao**, Shuhao Zhang, and Richard T. B. Ma. "Spacker: Unified State Migration for Distributed Streaming." IEEE International Conference on Distributed Computing Systems (**ICDCS**) 2025. [[paper](https://ieeexplore.ieee.org/abstract/document/11183749)][[code](https://github.com/sane-lab/Spacker)]
 
 * Jianjun Zhao\*, **Yancan Mao\***, Shuhao Zhang, Zhonghao Yang, and Haikun Liu. "Scalable Transactional Stream Processing on Multicore Processors." IEEE Transactions on Knowledge and Data Engineering (**TKDE**) 2025. [[paper](https://ieeexplore-ieee-org.libproxy1.nus.edu.sg/abstract/document/10949743)][[code](https://github.com/intellistream/MorphStream)]
@@ -61,6 +64,8 @@ Education
 
 Work Experiences
 ======
+* TikTok (Singapore) - System and Research Engineer (Jun 2025 - Now)
+  * Improving efficiency, scalability, and observability of hetergeneous and large-scale AI infra.
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
   * Co-designed and co-developed the policy-guided runtime management system StreamOps for cluster-wide streaming services in ByteDance cloud.
