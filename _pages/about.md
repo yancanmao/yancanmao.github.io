@@ -13,13 +13,12 @@ About me
 ======
 
 I am a System Engineer and Researcher at ByteDance Singapore, where I work on advancing AI infrastructure built on Ray to support large-scale distributed machine learning workloads.
-Previously, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), focusing on cloud-native data systems and stream processing infrastructures. I completed my PhD at NUS under the supervision of[Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
+Previously, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), focusing on cloud-native data systems and stream processing infrastructures. I completed my PhD at NUS under the supervision of [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
 
 I collaborate closely with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on research in high-performance streaming systems and data-intensive computing.
 
 My research interests span heterogeneous ML workload orchestration, distributed stream processing, and automatic configuration optimization. 
-I have been actively involved in the Apache Flink and have contributed to the Ray ecosystem, translating research ideas into production-ready systems for large-scale data and streaming workloads.
-
+I have participated in the Apache Flink community and contributed to the Ray ecosystem through incremental improvements informed by my research, especially in areas related to large-scale data processing workloads.
 
 <!-- Contact
 ======
