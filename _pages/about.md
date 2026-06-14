@@ -96,6 +96,7 @@ Talks
 
 Professional Services
 ======
+* External Review of CLUSTER 2026
 * Reviewer of BigData 2024
 * Reviewer of FGCS 2024
 * External Reviewer of TPDS 2024
