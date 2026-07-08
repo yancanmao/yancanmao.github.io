@@ -28,7 +28,7 @@ Email: maoyancan@comp.nus.edu.sg -->
 Publications
 ======
 
-* Zhaochen She\*, **Yancan Mao\***, and Richard T. B. Ma. "Sluice: End-to-End Latency Guarantee for Long-running Dataflow Systems."  Proceedings of the 2026 IEEE International Conference on Computer Communications (**INFOCOM**) 2026. [To Appear] 
+* Zhaochen She\*, **Yancan Mao\***, and Richard T. B. Ma. "Sluice: End-to-End Latency Guarantee for Long-running Dataflow Systems."  Proceedings of the 2026 IEEE International Conference on Computer Communications (**INFOCOM**) 2026. [[paper](https://ieeexplore.ieee.org/abstract/document/11571229)]
 
 
 * **Yancan Mao**, Shuhao Zhang, and Richard T. B. Ma. "Spacker: Unified State Migration for Distributed Streaming." IEEE International Conference on Distributed Computing Systems (**ICDCS**) 2025. [[paper](https://ieeexplore.ieee.org/abstract/document/11183749)][[code](https://github.com/sane-lab/Spacker)]
@@ -62,14 +62,19 @@ Education
 
 Work Experiences
 ======
-* TikTok (Singapore) - System and Research Engineer (Jun 2025 - Now)
-  * Improving efficiency, scalability, and observability of hetergeneous and large-scale AI infra.
+* ByteDance (Singapore) - System and Research Engineer (Jun 2025 - Present)
+  AI Infrastructure Development @ Ray | Open-source Ray Contributor
+  * Contributed to the release of Seed 2.1 by supporting Ray-based ultra-large-scale RL training orchestration, resolving scalability, scheduling, and reliability issues in production.
+  * Improved large-scale resource and task scheduling for Seed RL workloads, focusing on orchestration scalability, scheduling stability, and production reliability.
+  * Developed a high-speed GPU tensor transport layer based on GDR for Seed RL, similar in spirit to Ray Distributed Tensor Transport.
+  * Built autoscaling support for heterogeneous spot instances in Seed multimodal data workloads, improving resource elasticity and cost efficiency.
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
-  * Co-designed and co-developed the policy-guided runtime management system StreamOps for cluster-wide streaming services in ByteDance cloud.
+  * Co-designed and co-developed StreamOps, a policy-guided runtime management system for cluster-wide streaming services in ByteDance cloud.
 
 * Baidu (Beijing) - Software Engineer Intern (Dec 2016 - Aug 2017)
-  * Full-stack web development for two projects the Baidu Lawyer and the Baidu User Credit Management Platform. 
+  * Conducted full-stack web development for Baidu Lawyer and Baidu User Credit Management Platform.
+
 
 Honors & Awards
 ======
