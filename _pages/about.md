@@ -63,11 +63,9 @@ Education
 Work Experiences
 ======
 * ByteDance (Singapore) - System and Research Engineer (Jun 2025 - Present)
-  AI Infrastructure Development @ Ray | Open-source Ray Contributor
-  * Contributed to the release of Seed 2.1 by supporting Ray-based ultra-large-scale RL training orchestration, resolving scalability, scheduling, and reliability issues in production.
-  * Improved large-scale resource and task scheduling for Seed RL workloads, focusing on orchestration scalability, scheduling stability, and production reliability.
-  * Developed a high-speed GPU tensor transport layer based on GDR for Seed RL, similar in spirit to Ray Distributed Tensor Transport.
-  * Built autoscaling support for heterogeneous spot instances in Seed multimodal data workloads, improving resource elasticity and cost efficiency.
+  * Contributed to the release of Seed 2.1 by supporting Ray-based ultra-large-scale RL training orchestration.
+  * Developed a high-speed GPU tensor transport layer based on GDR for Seed RL.
+  * Built autoscaling framework for heterogeneous spot instances in Seed multimodal data workloads.
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
   * Co-designed and co-developed StreamOps, a policy-guided runtime management system for cluster-wide streaming services in ByteDance cloud.
