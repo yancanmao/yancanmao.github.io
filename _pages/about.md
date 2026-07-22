@@ -66,6 +66,7 @@ Work Experiences
   * Contributed to the release of Seed 2.1 by supporting Ray-based ultra-large-scale RL training orchestration.
   * Developed a high-speed GPU tensor transport layer based on GDR for Seed RL.
   * Built autoscaling framework for heterogeneous spot instances in Seed multimodal data workloads.
+  * Ray AI Ops: distilled experts' problem-resolving workflows to do auto root cause analysis.
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
   * Co-designed and co-developed StreamOps, a policy-guided runtime management system for cluster-wide streaming services in ByteDance cloud.
