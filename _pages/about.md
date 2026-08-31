@@ -78,6 +78,7 @@ Work Experiences
 
 Honors & Awards
 ======
+* Excellent Young Scientists Fund (Overseas), National Natural Science Foundation of China (2025)
 * Research Achievement Award of National University of Singapore (2024)
 * Outstanding Research Projects of the Year in ByteDance Academic Committee (2023)
 * Flink Forward Asia Hackathon 2nd Place (2 out of 267 teams, $10,000 awarded) (2021)
