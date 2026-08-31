@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yancan Mao / Homepage"
 title_separator          : "-"
 name                     : &name "Yancan Mao"
-description              : &description "Mao Yancan is currently a System Engineer and Researcher at ByteDance Singapore on the development of AI Infrastructure Ray."
+description              : &description "Mao Yancan is currently Professor at the School of Computer Science and Technology, Huazhong University of Science and Technology (HUST)."
 url                      : https://yancanmao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yancanmao.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Yancan Mao"
   avatar           : "headshot.jpg"
-  bio              : "System Engineer and Researcher at Bytedance Singapore"
-  location         : "ByteDance, Singapore"
+  bio              : "Professor at the School of Computer Science and Technology, Huazhong University of Science and Technology (HUST)"
+  location         : "Wuhan, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=7QJyq0QAAAAJ&hl=en"
