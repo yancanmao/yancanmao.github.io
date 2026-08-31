@@ -12,13 +12,13 @@ redirect_from:
 About me
 ======
 
-I am a System Engineer and Researcher at ByteDance Singapore, where I work on advancing AI infrastructure built on Ray to support large-scale distributed machine learning workloads.
-Previously, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), focusing on cloud-native data systems and stream processing infrastructures. I completed my PhD at NUS under the supervision of [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/). 
+I am currently a Professor at the School of Computer Science and Technology, Huazhong University of Science and Technology (HUST). My research focuses on building efficient and scalable systems for AI and data-intensive computing, with particular interests in heterogeneous ML workload orchestration, distributed stream processing, and automatic configuration optimization.
+
+Before joining HUST, I was a System Engineer and Researcher at ByteDance Singapore, where I worked on advancing AI infrastructure built on Ray to support large-scale distributed machine learning workloads. Previously, I was a Postdoctoral Research Fellow at the School of Computing, National University of Singapore (NUS), focusing on cloud-native data systems and stream processing infrastructures. I completed my PhD at NUS under the supervision of [Dr. Richard T. B. Ma](https://richard-ma.netlify.app/).
 
 I collaborate closely with [Dr. Shuhao Zhang](https://shuhaozhangtony.github.io/) on research in high-performance streaming systems and data-intensive computing.
 
-My research interests span heterogeneous ML workload orchestration, distributed stream processing, and automatic configuration optimization. 
-I have participated in the Apache Flink community and contributed to the Ray ecosystem through incremental improvements informed by my research, especially in areas related to large-scale data processing workloads.
+I have participated in the Apache Flink community and contributed to the Ray ecosystem[[blog](https://www.anyscale.com/blog/how-we-scaled-ray-from-batch-inference-to-10000-node-training-clusters)] through incremental improvements informed by my research, especially in areas related to large-scale data processing and distributed AI workloads.
 
 <!-- Contact
 ======
@@ -67,7 +67,7 @@ Work Experiences
   * Developed a high-speed GPU tensor transport layer based on GDR for Seed RL.
   * Built autoscaling framework for heterogeneous spot instances in Seed multimodal data workloads.
   * Ray AI Ops: distilled experts' problem-resolving workflows to do auto root cause analysis.
-  * Open Source Ray Contributor on large-scale workload scheduling optimization [[blog](https://www.anyscale.com/blog/how-we-scaled-ray-from-batch-inference-to-10000-node-training-clusters)].
+  * Open Source Ray Contributor on large-scale workload scheduling optimization.
 
 * TikTok (Singapore) - Research Intern (Apr 2022 - Mar 2023)
   * Co-designed and co-developed StreamOps, a policy-guided runtime management system for cluster-wide streaming services in ByteDance cloud.
